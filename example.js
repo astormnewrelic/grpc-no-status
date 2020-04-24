@@ -77,6 +77,7 @@ const main = async () => {
     console.log('status received, exiting')
     process.exit(0)
   })
+
   console.log('waiting for status ...')
 }
 main()
