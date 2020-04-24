@@ -78,6 +78,14 @@ const main = async () => {
     process.exit(0)
   })
 
+  // wait 10 seconds and then read some data
+  // setTimeout(()=>{
+  //   callStream.on('data', (data) => {
+  //     console.log(data)
+  //     console.log('received data')
+  //   })
+  // }, 10 * 1000)
+
   console.log('waiting for status ...')
 }
 main()
