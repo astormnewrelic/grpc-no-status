@@ -79,12 +79,13 @@ const main = async () => {
   })
 
   // wait 10 seconds and then read some data
-  // setTimeout(()=>{
-  //   callStream.on('data', (data) => {
-  //     console.log(data)
-  //     console.log('received data')
-  //   })
-  // }, 10 * 1000)
+  setTimeout(()=>{
+    callStream.on('data', (data) => {
+      console.log(data)
+      console.log('received data')
+      console.log('once the reading is done, will the status be sent?')
+    })
+  }, 10 * 1000)
 
   console.log('waiting for status ...')
 }
