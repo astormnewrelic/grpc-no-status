@@ -74,7 +74,10 @@ const main = async () => {
 
   callStream.on('status', (grpcStatus) => {
     console.log(grpcStatus)
+    console.log('status received, exiting')
+    process.exit(0)
   })
+  console.log('waiting for status ...')
 }
 main()
 
